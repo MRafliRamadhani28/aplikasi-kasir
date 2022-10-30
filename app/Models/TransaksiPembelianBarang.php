@@ -14,11 +14,11 @@ class TransaksiPembelianBarang extends Model
 
     public function barang()
     {
-        return $this->belongsTo(Barang::class);
+        return $this->belongsTo(Barang::class, 'master_barang_id');
     }
 
     public function transaksi()
     {
-        return $this->hasMany(TransaksiPembelian::class);
+        return $this->belongsTo(TransaksiPembelian::class, 'transaksi_pembelian_id');
     }
 }

@@ -14,6 +14,6 @@ class TransaksiPembelian extends Model
 
     public function dtl_barang()
     {
-        return $this->belongsTo(TransaksiPembelianBarang::class);
+        return $this->hasMany(TransaksiPembelianBarang::class);
     }
 }

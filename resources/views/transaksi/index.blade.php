@@ -87,9 +87,9 @@
           url: "{{ url('addCart') }}",
           data: "barang_id=" + harga_satuan[0] + "&harga_satuan="+ harga_satuan[1],
         });
-        // setTimeout(function(){
-        //       window.location.reload();
-        //     },500);
+        setTimeout(function(){
+          window.location.reload();
+        },500);
 
         $('#barang').val(0);
       }
@@ -105,7 +105,7 @@
           data: "total=" + total,
         });
         setTimeout(function(){
-        window.location.reload();
+          window.location.reload();
         },500);
       }
     </script>

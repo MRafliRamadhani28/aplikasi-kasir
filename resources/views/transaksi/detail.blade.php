@@ -19,7 +19,7 @@
                 <tr>
                   <th>ID Transaksi</th>
                   <th>Barang yang dibeli</th>
-                  <th>Total Harga</th>
+                  <th>Total Transaksi</th>
                   <th>Waktu Transaksi</th>
                 </tr>
               </thead>
@@ -52,9 +52,6 @@
             $('#barang').val(0);
           }
         });
-        // setTimeout(function(){
-          // window.location.reload();
-        // },500);
       }
     </script>
 @endpush

@@ -48,7 +48,7 @@ class TransaksiPembelianController extends Controller
         // return TransaksiPembelianBarang::with('transaksi')->where('transaksi_pembelian_id', $request->id)->get();
         return view('transaksi.tbody', [
             'details' => TransaksiPembelian::all(),
-            'items' => TransaksiPembelianBarang::with('transaksi')->where('id', $request->id)->get(),
+            'items' => TransaksiPembelianBarang::with('transaksi')->where('transaksi_pembelian_id', $request->id)->get(),
         ]);
     }
 }
